@@ -27,3 +27,9 @@
 ```
 <title>Página Inicial</title>
 ```
+
+# CSS
+
+É uma linguagem de estilo, isso quer dizer que ela tem as seguintes responsabilidades:
+
+- Visual
