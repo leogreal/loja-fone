@@ -34,3 +34,10 @@ button {
   border: none;
   border-radius: 10px;
 }
+
+body {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
