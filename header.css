@@ -6,21 +6,17 @@ header {
 
 h1 {
   font-size: 40px;
-  font-family: "ArialMT", Verdana, sans-serif;
+  font-family: Arial, 'Roboto', sans-serif;
   float: left;
 }
 
 nav {
   font-size: 21px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  float: right;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-size: inherit;
-  font-family: "Segoe UI", Verdana, sans-serif;
-}
-
-nav {
-  float: right;
 }
