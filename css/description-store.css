@@ -1,9 +1,10 @@
 .description-store {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  width: 550px;
-}
+    color: #fff;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 555px;
+  }
 
 .description-term {
   font-size: 25px;
