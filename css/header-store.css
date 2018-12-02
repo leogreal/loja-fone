@@ -2,8 +2,13 @@
   background-color: #e24647;
   color: #fff;
   overflow: hidden;
-  margin: 0px 115px;
+  width: 80%;
   padding: 55px 60px 95px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .title {
@@ -26,11 +31,4 @@
 
 .last {
   margin-right: 0;
-}
-
-body {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
 }
