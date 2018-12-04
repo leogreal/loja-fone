@@ -6,4 +6,13 @@
   border-top-right-radius: 150px;
   border-bottom-right-radius: 150px;
   margin-right: 156px;
+  position: relative;
+}
+
+.photo-product > .heart {
+  position: absolute;
+  right: 0px;
+  transform: translateX(calc(76px + 100%));
+  top: 35px;
+  cursor: pointer;
 }
