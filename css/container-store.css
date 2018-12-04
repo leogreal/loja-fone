@@ -1,18 +1,10 @@
 .container-store {
     background-color: #e24647;
-    width: 85%;
-    padding: 55px 60px 95px;
+    width: 90%;
+    padding: 55px 60px 95px 0px;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-.image-store {
-    background-color: #fff;
-    border-radius: 0 150px 150px 0;
-    display: inline-block;
-    margin-left: 45px;
-    margin-right: 105px;
-  }
