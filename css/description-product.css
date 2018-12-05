@@ -21,9 +21,21 @@
   cursor: pointer;
 }
 
+.description-product > .item.-heart img:hover {
+  transform: scale(1.1);
+
+  transition: all 200ms linear;
+}
+
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.description-product > .item.-star img:hover {
+  transform: scale(1.1);
+
+  transition: all 200ms linear;
 }
 
 .description-product > .item.-star + .item {
