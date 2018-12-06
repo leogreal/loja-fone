@@ -36,12 +36,23 @@
   color: inherit;
   margin-right: 60px;
   padding-bottom: 8px;
-}
-
-.header-store .action:hover{
-  border-bottom: solid 1px #fff;
+  display: inline-block;
 }
 
 .header-store .action.-last {
   margin-right: 0;
+}
+
+.header-store .action::after {
+  content: '';
+  display: block;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #fff;
+
+  width: 0;
+  transition: all 1s ease;
+}
+
+.header-store .action:hover:after {
+  width: 100%;
 }
