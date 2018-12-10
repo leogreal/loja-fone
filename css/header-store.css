@@ -6,7 +6,7 @@
 }
 
 .header-store > .title {
-  font-size: 42px;
+  font-size: 40px;
   font-family: Arial, 'Roboto', sans-serif;
   float: left;
   text-transform: uppercase;
@@ -29,14 +29,20 @@
   padding: 8px;
   width: 358px;
   margin-right: 65px;
+  vertical-align: bottom;
 }
 
 .header-store .action {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
   padding-bottom: 8px;
-  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+
+.header-store .action:hover {
+  border-bottom-color: #fff;
 }
 
 .header-store .action.-last {
