@@ -8,3 +8,29 @@
   margin-right: 156px;
   position: relative;
 }
+
+@media (max-width: 1320px) {
+  .photo-product {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .photo-product {
+    float: none;
+
+    height: 225px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .photo-product img {
+    height: inherit;
+  }
+}

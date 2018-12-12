@@ -10,3 +10,27 @@
   bottom: 0;
   transform: translateY(calc(100% + 98px));
 }
+
+@media (max-width: 1320px) {
+  .wrap-product {
+    width: 460px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .wrap-product {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .wrap-product > .buttons {
+      position: relative;
+      bottom: 80px;
+  }
+}
+
+@media (max-width: 739px) {
+  .wrap-product {
+    width: 100%;
+  }
+}

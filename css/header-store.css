@@ -64,6 +64,10 @@
 
 
 @media (max-width: 1235px) {
+  .header-store {
+    margin-bottom: 50px;
+  }
+
   .header-store > .title {
     float: none;
     text-align: center;
