@@ -11,15 +11,15 @@
   transform: translateY(calc(100% + 98px));
 }
 
-@media (max-width: 1325px) {
-  .wrap-product {
-    margin-right: 140px;
-  }
-}
-
 @media (max-width: 1310px) {
-  .wrap-product {
-    display: block;
-    margin-right: 0;
+  .wrap-product  {
+    width: 100%;
+  }
+
+  .wrap-product > .buttons {
+    position: static;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
