@@ -1,3 +1,7 @@
 const $btnSecond = window.document.querySelector(".-second");
  
-console.log($btnSecond);
+$btnSecond.addEventListener("click", btnSecondHandleClick);
+ 
+function btnSecondHandleClick() {
+    alert("Funcionou!");
+}
