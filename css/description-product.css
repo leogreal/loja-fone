@@ -33,6 +33,14 @@
   background-image: url(../img/heart-active.png);
 }
 
+.description-product .icon {
+  transition: transform 100ms linear;
+}
+
+.description-product .icon:hover {
+  transform: scale(1.2);
+}
+
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;

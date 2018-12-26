@@ -1,7 +1,7 @@
 const $heart = window.document.querySelector(".-heart");
 
-$heart.addEventListener("click", handleClick);
+$heart.addEventListener("click", heartHandleClick);
 
-function handleClick() {
+function heartHandleClick() {
     $heart.classList.toggle("-active");
 }
