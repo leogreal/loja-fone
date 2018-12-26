@@ -10,12 +10,19 @@ function heartHandleClick() {
 /* Star Rank */
 const $stars = window.document.querySelector(".-star").childNodes;
 
-for (let i = 0; i < $stars.length; i++) {
-    $stars[i].addEventListener("click", function() {
-        if(this.src.includes("star.png")){
-            this.src = "img/star-active.png";
+$stars.forEach(star => {
+    if(star.nodeName === "IMG"){
+        star.addEventListener("click", fillStars);
+    }
+});
+
+function fillStars(){
+    const { rate } = this.dataset;
+    $stars.forEach(star => {
+        if(star.nodeName === "IMG" && star.dataset.rate <= rate){
+            star.src = "img/star-active.png";
         } else {
-            this.src = "img/star.png";
+            star.src = "img/star.png";
         }
-    });        
+    })
 }
