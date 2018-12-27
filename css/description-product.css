@@ -1,11 +1,11 @@
 .description-product {
+  font-family: "Roboto", sans-serif;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
 }
 
 .description-product > .title {
   font-size: 25px;
-  margin-bottom:  50px;
+  margin-bottom: 50px;
 }
 
 .description-product > .item {
@@ -14,36 +14,50 @@
 }
 
 .description-product > .item.-heart {
-  background-image: url(../img/heart.png);
+  position: absolute;
+  transform: translateX(-100%);
+  top: 8px;
+  left: -47px;
+  cursor: pointer;
   width: 33px;
   height: 29px;
-  transition: transform 100ms linear;
-
-  position: absolute;
-  top: 0px;
-  left: -60px;
-  cursor: pointer;
-}
-
-.description-product > .item.-heart:hover {
-  transform: scale(1.2);
-}
-
-.description-product > .item.-active {
-  background-image: url(../img/heart-active.png);
-}
-
-.description-product .icon {
-  transition: transform 100ms linear;
-}
-
-.description-product .icon:hover {
-  transform: scale(1.2);
 }
 
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.description-product .icon {
+  transition: transform 50ms linear;
+}
+
+.description-product .icon:hover {
+  transform: scale(1.1);
+}
+
+.description-product .item .icon.-active {
+  display: none;
+}
+
+.description-product > .item.-active .icon {
+  display: none;
+}
+
+.description-product > .item.-active .icon.-active {
+  display: block;
+}
+
+.description-product .star {
+  display: inline-block;
+}
+
+.description-product .star.-active > .icon {
+  display: none;
+}
+
+.description-product .star.-active > .-active {
+  display: block;
 }
 
 .description-product > .item.-star + .item {
