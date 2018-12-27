@@ -1,28 +1,48 @@
-const $heart = window.document.querySelector(".-heart");
+const $heart = document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".star");
+const $positionLast = $stars.length - 1;
 
-$heart.addEventListener("click", heartHandleClick);
+$heart.addEventListener("click", handleClick);
 
-function heartHandleClick() {
-    $heart.classList.toggle("-active");
-}
+$stars.forEach(function($star, $key) {
+  if ($key == 0) {
+    $star.addEventListener("click", firstStar);
+  }
 
+  if ($key == $positionLast) {
+    $star.addEventListener("click", lastStar);
+  }
 
-/* Star Rank */
-const $stars = window.document.querySelector(".-star").childNodes;
-
-$stars.forEach(star => {
-    if(star.nodeName === "IMG"){
-        star.addEventListener("click", fillStars);
-    }
+  if ($key > 0 && $key < $positionLast) {
+    $star.addEventListener("click", function() {
+      middleStar($key);
+    });
+  }
 });
 
-function fillStars(){
-    const { rate } = this.dataset;
-    $stars.forEach(star => {
-        if(star.nodeName === "IMG" && star.dataset.rate <= rate){
-            star.src = "img/star-active.png";
-        } else {
-            star.src = "img/star.png";
-        }
-    })
+function handleClick() {
+  this.classList.toggle("-active");
+}
+
+function firstStar() {
+  $stars.forEach(function($star) {
+    $star.classList.remove("-active");
+  });
+  this.classList.add("-active");
+}
+
+function lastStar() {
+  $stars.forEach(function($star) {
+    $star.classList.add("-active");
+  });
+}
+
+function middleStar(index) {
+  $stars.forEach(function($star, $key) {
+    $star.classList.remove("-active");
+
+    if ($key <= index) {
+      $star.classList.add("-active");
+    }
+  });
 }
