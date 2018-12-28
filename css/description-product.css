@@ -113,6 +113,12 @@
   .description-product > .item.-number {
     padding-top: 4px;
   }
+
+  .description-product > .item.-heart {
+    transform: none;
+    position: inherit;
+    margin: 0 auto 50px;
+  }
 }
 
 @media (max-width: 720px) {
