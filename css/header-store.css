@@ -104,10 +104,13 @@
     transform: translateX(-88%);
     background-color: #fff;
     color: #000;
+
+    transition: transform 200ms linear;
   }
 
   .header-store .-active[type="search"] {
-    transform: translateX(0%);
+    transition: transform 200ms cubic-bezier(0, 0, 0.96, 1.26);
+    transform: translateX(0);
   }
 }
 
