@@ -110,9 +110,9 @@
     top: 0;
     left: 0;
     margin-right: 0px;
-    /*transform: translateX(-88%);
+    transform: translateX(-88%);
 
-    transition: transform 200ms linear;*/
+    transition: transform 200ms linear;
   }
 
   .header-store .search > [type="search"] {
@@ -126,10 +126,10 @@
     vertical-align: middle;
   }
 
-  /*.header-store .search > .-active[type="search"] {
+  .header-store .search.-active {
     transition: transform 200ms cubic-bezier(0, 0, 0.96, 1.26);
     transform: translateX(0);
-  }*/
+  }
 }
 
 @media (max-width: 530px) {
