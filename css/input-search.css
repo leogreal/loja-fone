@@ -1,6 +1,5 @@
 .input-search {
   display: inline-block;
-  margin-right: 65px;
 }
 
 .input-search > .content {
@@ -10,13 +9,18 @@
   color: inherit;
   font-family: Arial, "Roboto", sans-serif;
   font-size: 20px;
-  padding: 8px;
   width: 358px;
+  padding: 8px;
+  margin-right: 65px;
   vertical-align: bottom;
 }
 
 .input-search > .content::placeholder {
   color: inherit;
+}
+
+.input-search > .icon {
+  display: none;
 }
 
 @media (max-width: 955px) {
@@ -36,6 +40,7 @@
   }
 
   .input-search > .icon {
+    display: inline-block;
     background-color: #fff;
     box-sizing: border-box;
     width: 40px;
