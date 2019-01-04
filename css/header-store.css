@@ -105,7 +105,7 @@
 }
 
 @media (max-width: 345px) {
-  .header-store > .navigation {
+  .header-store .action {
     display: none;
   }
 }
