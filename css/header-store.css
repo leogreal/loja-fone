@@ -49,6 +49,10 @@
   transform: scale(1);
 }
 
+.header-store .action.icon {
+  display: none;
+}
+
 
 @media (max-width: 1235px) {
   .header-store {
@@ -105,7 +109,46 @@
 }
 
 @media (max-width: 345px) {
-  .header-store .action {
-    display: none;
+  body {
+    overflow: hidden;
+  }
+
+  .header-store .action.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10;
+
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  
+  .header-store .menu {
+    position: absolute;
+    top: 40;
+    right: 0;
+    
+    box-sizing: border-box;
+    width: 150px;
+    padding: 8px;
+    
+    background-color: #fff;
+    color: #000;
+
+    transform: translateX(150px);
+    transition: transform 200ms linear;
+  }
+
+  .header-store .menu.-active {
+    transition: transform 200ms linear;
+    transform: translateX(0);
+  }
+
+  .header-store .menu > .action {
+    float: left;
+    clear: left;
   }
 }
