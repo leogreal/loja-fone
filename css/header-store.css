@@ -120,5 +120,19 @@
 }
 
 @media (max-width: 345px) {
-  
+  .header-store .item.-menu {
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    text-indent: -9999px;
+    margin: 0;
+  }
+  .header-store .action {
+    display: none;
+  }
 }
