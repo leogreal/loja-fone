@@ -1,7 +1,7 @@
-const $buttonMenu = document.querySelector(".action.icon");
-const $menu = document.querySelector(".menu");
+const $headerStore = document.querySelector(".header-store");
+const $list = $headerStore.querySelector(".list");
+const $menu = $headerStore.querySelector(".-menu");
 
-$buttonMenu.addEventListener("click", event => {
-    event.preventDefault();
-    $menu.classList.toggle("-active");
+$menu.addEventListener("click", () => {
+    $list.classList.toggle("-active");
 });
