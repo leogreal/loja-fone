@@ -9,7 +9,11 @@ body {
 }
 
 @media (max-width: 345px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
+  }
 }
